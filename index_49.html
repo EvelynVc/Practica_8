@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <title>49 Evelyn Valles</title>
+        <link rel="stylesheet" href="p8.css">
+    </head>
+    <body class="pagina">
+        <h1>Formulario</h1>
+        <form action="index_49.html" method="GET"  enctype="multipart/form-data" autocomplete="off" >
+            <p>1. Seleccione su nivel de programación:<br><br>
+                <input type="radio" name="experiencia" value="junior">Junior<br>
+                <input type="radio" name="experiencia" value="Semi senior">Semi senior<br>
+                <input type="radio" name="experiencia1" value="senior" checked>Senior<br>
+                <input type="radio" name="experiencia1" value="jninguna">Ninguna<br>
+            </p>
+            <p>2. Seleccione los deportes que practica<br><br>
+                <input type="checkbox" name="futbol" value="futbol">Futbol<br>
+                <input type="checkbox" name="basquetbol" checked>Basquetbol<br>
+                <input type="checkbox" name="beisbol">Beisbol<br>
+                <input type="checkbox" name="voleibol">Voleibol<br>
+                <input type="checkbox" name="otro">Otro<br>
+            </p>
+            <p>3. Seleccione el color que mas le agrade<br><br>
+                <select class="colores" multiple="multiple" size="3"> 
+                    <option>Azul</option>
+                    <option selected>Verde</option>
+                    <option >Rojo</option>
+                    <option>Blanco</option>
+                </select>
+            </p>
+            <p>4.Si no le agrada ninguno, busque un coloren el buscador:<br><br>
+                <label>Buscador:</label>
+                <input list="buscar">
+                <datalist id="buscar">
+                    <option>Azul</option>
+                    <option selected>Verde</option>
+                    <option >Rojo</option>
+                    <option>Blanco</option>
+                </datalist>
+            </p>
+            <p>5. Seleccione una imagen:<br><br>
+                <input type="file" name="archivo" accept="image/*" multiple>
+                <input type="hidden" name="oculto" value="oculto"><br>
+                <input type="text" name="oculto" value="oculto" readonly><br>
+                <input type="text" name="oculto" value="oculto" disabled>
+            </p>
+            <p>
+            <button type="submit">Enviar</button>
+            <button type="reset" >Limpiar</button>
+            </p>
+        </form>
+    </body>
+</html>
